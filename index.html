@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanay Jathal CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Tanay Kunal Jathal</h1>
+    <p class="tagline">💻 Aspiring IT Pro • Learner • Football Fan</p>
+  </header>
+
+  <main>
+    <section class="section animate">
+      <h2>🎯 Career Objective</h2>
+      <p>
+        Meticulous IT student with basic knowledge in software development, networking, and database management. 
+        Looking for an entry-level position in the IT industry. Ready to be part of innovative projects, 
+        learn from experienced professionals, and grow within a dynamic and forward-thinking organization. 
+        Dedicated to continuous learning and staying updated on the latest technological advancements.
+      </p>
+    </section>
+
+    <section class="section animate">
+      <h2>🧠 Profile</h2>
+      <p>Good inter-personal and oral communication skills. Comfortable collaborating with teams. Fluency in English.</p>
+    </section>
+
+    <section class="section animate">
+      <h2>🚀 Work Experience</h2>
+      <p><em>Fresher</em></p>
+    </section>
+
+    <section class="section animate">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li>10th Standard - Saint Kabir Private School</li>
+        <li>Diploma in Computer Engineering (Pursuing) - LJ University</li>
+      </ul>
+      <h3>📜 Certifications:</h3>
+      <ul>
+        <li>SQL – University of Colorado Boulder</li>
+        <li>Basic Mathematics – BITS Pilani</li>
+        <li>Developing People Skills – IBM</li>
+        <li>Programming with Scratch – HKUST</li>
+        <li>Git and GitHub – IBM</li>
+        <li>Agile Project Management – Google</li>
+      </ul>
+    </section>
+
+    <section class="section animate">
+      <h2>🛠️ Computer Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>C++</span>
+        <span>MySQL</span>
+        <span>MS Word</span>
+        <span>Excel</span>
+        <span>PowerPoint</span>
+        <span>Tally</span>
+      </div>
+    </section>
+
+    <section class="section animate">
+      <h2>👤 Personal Details</h2>
+      <ul>
+        <li><strong>Date of Birth:</strong> 20th February 2006</li>
+        <li><strong>Languages:</strong> English, Hindi, Gujarati</li>
+        <li><strong>Hobbies:</strong> Football, Video Games, Listening to Music</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>📧 tanay.jathal06@gmail.com • 📱 9409181437</p>
+    <p>🏡 E-401 Maple Tree Garden Homes, Thaltej, Ahmedabad</p>
+    <button onclick="window.print()" class="print-btn">📄 Download as PDF</button>
+  </footer>
+
+  <script>
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
